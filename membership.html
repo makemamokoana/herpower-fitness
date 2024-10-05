@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Our Memberships</title>
+    <link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <header class="w3-header w3-top w3-white w3-xlarge">
+        <span class="w3-left w3-padding">HERPOWER FITNESS</span>
+        <a href="login.html" class="w3-button-login w3-right">Login</a>
+        <span class="w3-button w3-right" onclick="w3_open()">☰</span>
+      </header>
+
+
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <br><br><br><br>
+
+      <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;" id="mySidebar">
+        <br><br><br><br><br>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+        <a href="HerPower.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME PAGE</a> 
+        <a href="membership.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMBERSHIPS</a> 
+        <a href="sche.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SCHEDULES</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="Hercontact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+        <div class="w3-dropdown-click">
+          <button class="w3-button w3-block w3-center w3-padding-16" onclick="toggleDropdown('classesDropdown')">CLASSES</button>
+          <div id="classesDropdown" class="w3-dropdown-content w3-bar-block w3-animate-zoom w3-black w3-card-4" style="display:none;">
+            <a href="Pilates.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">PILATES CLASS</a>
+            <a href="aero.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">AEROBICS CLASS</a>
+            <a href="self-def.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">SELF DEFENSE CLASS</a>
+            <a href="dancing.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">DANCE CLASS</a>
+            <a href="cycle.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">CYCLING CLASS</a>
+            <a href="yogi.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">YOGA CLASS</a>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="image-section">
+            <div class="glass">
+                <h1>Our Memberships and Offers</h1>
+                <p class="p1">Join Us and Empower Yourself</p>
+            </div>
+        </div>
+    
+
+    <section>
+        <h1 class="hd">Membership Plans</h1>
+        <div class="grid-container">
+            
+            <div class="plan1 plans">
+                <h2 class="head-plan">Basic Plan</h2>
+                <p class="price">R299/month</p><hr>
+                <p>Access to all gym equipment</p>
+                <p>Convienient Time</p>
+                <p>Group Traning</p>
+                <a href="Join.html" class="arrow" title="Join Now">→</a>
+
+                
+            </div>
+
+            <div class="plan2 plans">
+                <h2 class="head-plan">Beginner Plan</h2>
+                <p class="price">R399/month</p><hr>
+                <p>Access to all gym equipment</p>
+                <p>Convienient Time</p>
+                <p>Group Traning</p>
+                <p>Personal Trainer</p>
+                <a href="Join.html" class="arrow" title="Join Now">→</a>
+                
+            </div>
+
+            <div class="plan3 plans">
+                <h2 class="head-plan">Premium Plan</h2>
+                <p class="price">R599/month</p><hr>
+                <p>Access to all gym equipment</p>
+                <p>Convienient Time</p>
+                <p>Group Traning</p>
+                <p>Personal Trainer</p>
+                <p>Yoga Classes</p>
+                <a href="Join.html" class="arrow" title="Join Now">→</a>
+
+               
+            </div>
+
+            <div class="plan4 plans">
+                <h2 class="head-plan">Ultimate Plan</h2>
+                <p class="price">R899/month</p><hr>
+                <p>Access to all gym equipment</p>
+                <p>Convienient Time</p>
+                <p>Personal Trainer</p>
+                <p>Yoga Classes</p>
+                <p>Pilates</p>
+                <p>Aerobics Class</p>
+                <a href="Join.html" class="arrow" title="Join Now">→</a> 
+            </div>
+        </div>
+    </section>
+            <div class="offers-bg">
+                
+                <h1 class="offers-head">Here's the deal!</h1>
+                <div class="offers-container">
+                <div>
+                    <h2>New Member Discount</h2>
+                    <h2>50% Off First Month</h2>
+                    <p>Join the premium or ultimate plan and get a complimentary gym bag, plus 50% discount as a new member.</p>
+                    <a href="Join.html"><button type="button" class="but">Get this deal</button></a>
+                    
+                  </div>
+                  
+                  <div>
+                    <h2>Seasonal Promotions</h2>
+                    <h2>15% Off during Summer Months</h2>
+                    <p>Join on a Basic, Beginner, Premium or Ultimate plan now and get 15% discount during all the summer months.</p>
+                    <a href="Join.html"><button type="button" class="but">Get this deal</button></a>
+                  </div>
+                  
+                  <div>
+                    <h2>Group Discounts</h2>
+                    <h2>10% Off for Groups</h2>
+                    <p>Join on a Basic, Beginner, Premium or Ultimate plan as a group of 3 or more who sign up together and get 15% discount.</p>
+                    <a href="Join.html"><button type="button" class="but">Get this deal</button></a>
+                
+                  </div>
+                </div>
+
+            </div>
+        
+            
+
+
+            <footer>
+              <div class="footer-container">
+                  <div class="footer-section">
+                      <h3>Company</h3>
+                      <ul>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="membership.html">Membership</a></li>
+                          <li><a href="schedule.html">Schedule</a></li>
+                          <li><a href="classes.html">Classes</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-section">
+                      <h3>Contacts</h3>
+                      <ul>
+                          <li>676 Gallagher Avenue,</li>
+                          <li>Midrand, Johannesburg</li>
+                          <li>South Africa, 1685</li>
+                          <li>Phone: 035 001 6030</li>
+                          <li><a href="mailto:info@herpowerfitness.com">info@herpowerfitness.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-section">
+                      <h3>Follow Us</h3>
+                      <div class="footer-icons">
+                          <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+                          <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+                          <a href="#"><img src="email.jpg" alt="Email"></a>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Function to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+      
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+      
+        // Function to toggle dropdown menu
+        function toggleDropdown(id) {
+          var dropdown = document.getElementById(id);
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>

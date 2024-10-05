@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Class</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .intro-section {
+            background-image: url(yoga-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            
+        }
+        .defence-bg {
+    background: rgba(72, 62, 62, 0.6); /* Light background with some opacity */
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 38px;
+    line-height: 10%;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+        .images-section {
+            background-color: whitesmoke; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            gap: 20px;
+        }
+
+        .trainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+
+        .trainer img {
+            width: 100%;
+            height: 100%;
+            border-radius: 60%;
+        }
+
+        .trainer .name {
+          color: black;
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .pilates-img {
+            width: 65%;
+            border-radius: 10px;
+        }
+
+        .description-section {
+            color: rgb(73, 73, 73);
+            margin-bottom: 1%;  
+            padding-left: 5rem;
+            padding-right: 5rem;
+            background: linear-gradient(to right, #9796f0,#fbc7d4); 
+            text-align: left;
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+        
+
+
+
+
+
+
+
+.w3-container {text-align: center;}
+
+.w3-sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.w3-sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,; /* Example of specifying a stylish font */
+  font-weight: normal; /* Adjust font weight as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+  color: white; /* Adjust text color */
+}
+
+.w3-sidebar a:hover {
+  background-color: #555;
+}
+
+.w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: relative;
+}
+
+.w3-dropdown-content a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-dropdown-content a:hover {
+  background-color: #555;
+}
+
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.w3-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 3px); /* Adjust width to accommodate sidebar */
+  background: linear-gradient(to right, #B79891,#94716B);
+  /*background-color: #525151;*/
+  padding: 16px;
+  
+  text-align: right; /* Aligns content to the right */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 4; /* Ensures header is above sidebar */
+}
+
+.w3-header .w3-button {
+  font-size: 24px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.w3-main {
+  margin-right: 250px; /* Same width as sidebar */
+  padding-top: 50px; /* Adjusted to account for header height */
+}
+
+/* Styling for Login button */
+.w3-button-login {
+  background-color: black; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px; /* Rounded corners */
+}
+
+
+
+.w3-button-login:hover {
+  background-color: gray; /* Darker green when hovering */
+}
+
+
+footer {
+            /*background-color: #333;*/
+            background: linear-gradient(to right, #2C3E50,#FD746C);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .footer-section {
+            width: 30%;
+        }
+
+        .footer-section h3 {
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-icons a {
+            margin-right: 10px;
+        }
+
+        .footer-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        button {
+    background: rgba(188, 183, 183, 0.1);
+    
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    
+
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="w3-header w3-top w3-white w3-xlarge">
+        <span class="w3-left w3-padding">HERPOWER FITNESS</span>
+        <a href="login.html" class="w3-button-login w3-right">Login</a>
+        <span class="w3-button w3-right" onclick="w3_open()">☰</span>
+      </header>
+
+
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <br><br><br><br>
+
+      <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;" id="mySidebar">
+        <br><br><br><br><br>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+        <a href="HerPower.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME PAGE</a> 
+        <a href="membership.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMBERSHIPS</a> 
+        <a href="#Schedules" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SCHEDULES</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="Hercontact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+        <div class="w3-dropdown-click">
+          <button class="w3-button w3-block w3-center w3-padding-16" onclick="toggleDropdown('classesDropdown')">CLASSES</button>
+          <div id="classesDropdown" class="w3-dropdown-content w3-bar-block w3-animate-zoom w3-black w3-card-4" style="display:none;">
+            <a href="Pilates.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">PILATES CLASS</a>
+            <a href="aero.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">AEROBICS CLASS</a>
+            <a href="self-def.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">SELF DEFENSE CLASS</a>
+            <a href="dancing.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">DANCE CLASS</a>
+            <a href="cycle.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">CYCLING CLASS</a>
+            <a href="yogi.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">YOGA CLASS</a>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+    <section class="intro-section">
+        <div class="defence-bg">
+        <h1>Our Yoga Class</h1>
+        </div>
+    </section>
+
+    <section class="images-section">
+        <div class="image-container">
+            <div class="trainer">
+                <img src="yoga-trainer.jpg" alt="Trainer">
+                <div class="name">Arrya Stark is a professional trainer and qualified Yoga Expert. A yoga expert whos's going to help you achieve the mindful state.</div>
+            </div>
+            <img src="women-yoga - Copy.jpg" alt="People Doing dancing" class="pilates-img">
+        </div>
+    </section>
+
+    <section class="description-section">
+        <p class="aero-p1">
+            At HerPower Fitness, our yoga classes are thoughtfully designed to create a nurturing and empowering environment for women to explore the numerous benefits of this ancient practice. 
+            Our yoga studio provides a serene and welcoming space, equipped with all the necessary props and mats to support practitioners of all levels. 
+            Our experienced instructors guide participants through a variety of yoga styles, including Hatha, Vinyasa, and Restorative, ensuring that each class caters to the diverse needs and preferences of our members.
+        
+        <br><br><br>
+        
+        yoga offers specific benefits that extend beyond physical health. 
+        The practice of yoga encourages a deep connection between mind and body, fostering a sense of mindfulness and presence. 
+        This mindfulness can be particularly empowering for women, helping them to cultivate a positive self-image and greater self-awareness. 
+        The meditative aspects of yoga provide a space for introspection and emotional release, allowing women to manage stress, anxiety, and other emotional challenges more effectively. 
+        By focusing on the breath and the present moment, yoga can help women develop tools to navigate the complexities of daily life with greater ease and resilience.
+            </p>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacts</h3>
+                <ul>
+                    <li>676 Gallagher Avenue,</li>
+                    <li>Midrand, Johannesburg</li>
+                    <li>South Africa, 1685</li>
+                    <li>Phone: 035 001 6030</li>
+                    <li><a href="mailto:info@herpowerfitness.com">info@herpowerfitness.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-icons">
+                    <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="email.jpg" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Function to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+      
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+      
+        // Function to toggle dropdown menu
+        function toggleDropdown(id) {
+          var dropdown = document.getElementById(id);
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>
