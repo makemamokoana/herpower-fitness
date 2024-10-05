@@ -1,0 +1,285 @@
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+}
+
+.image-section {
+    
+    background: url('women-working-out-gym-strengthening-their-physique-80798230.webp') no-repeat center center/cover;
+    height: 130vh;
+    color: white;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;*/
+    overflow: hidden;
+}
+
+.glass {
+  background: rgba(72, 62, 62, 0.6); /* Light background with some opacity */
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 38px;
+  line-height: 10%;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{color: white;}
+           
+button {
+    background: rgba(188, 183, 183, 0.1);
+    
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    
+
+}
+
+.w3-container {text-align: center;}
+
+.w3-sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.w3-sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,; /* Example of specifying a stylish font */
+  font-weight: normal; /* Adjust font weight as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+  color: white; /* Adjust text color */
+}
+
+.w3-sidebar a:hover {
+  background-color: #555;
+}
+
+.w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: relative;
+}
+
+.w3-dropdown-content a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+h1{text-align: center;}
+
+.w3-dropdown-content a:hover {
+  background-color: #555;
+}
+
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.w3-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 3px); /* Adjust width to accommodate sidebar */
+  background-color: #525151;
+  padding: 16px;
+  text-align: right; /* Aligns content to the right */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 4; /* Ensures header is above sidebar */
+}
+
+.w3-header .w3-button {
+  font-size: 24px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.w3-header .w3-left {
+  margin-left: 20px;
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.Map{text-align: center;}
+
+.w3-main {
+  margin-right: 250px; /* Same width as sidebar */
+  padding-top: 50px; /* Adjusted to account for header height */
+}
+
+/* Styling for Login button */
+.w3-button-login {
+  background-color: black; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px; /* Rounded corners */
+}
+
+.w3-button-login:hover {
+  background-color: gray; /* Darker green when hovering */
+}
+
+/*Footer*/
+
+.word{margin-top: 200px;}
+
+h3{color: white;}
+.container2{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.social-icons a {margin: 0 15px;}
+.social-icons{margin-bottom: 15px;}
+.social-icons img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;}
+.social-icons img:hover {
+  transform: scale(1.1);}
+
+
+

@@ -1,0 +1,309 @@
+html {
+  overflow-x: hidden;
+}
+
+body, h1,h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+.home-head { text-align: center;
+font-size: 45px;
+font-weight: 900;
+}
+
+i {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+
+p{text-align: center;}
+
+.w3-container {text-align: center;}
+
+.w3-sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.w3-sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,; /* Example of specifying a stylish font */
+  font-weight: normal; /* Adjust font weight as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+  color: #333; /* Adjust text color */
+}
+
+.w3-sidebar a:hover {
+  background-color: #555;
+}
+
+.w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: relative;
+}
+
+.w3-dropdown-content a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-dropdown-content a:hover {
+  background-color: #555;
+}
+
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.w3-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 3px); /* Adjust width to accommodate sidebar */
+  background-color: #fff;
+  padding: 16px;
+  text-align: right; /* Aligns content to the right */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 4; /* Ensures header is above sidebar */
+}
+
+.w3-header .w3-button {
+  font-size: 24px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.w3-header .w3-left {
+  float: left;
+  margin-left: 20px;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.w3-main {
+  margin-right: 250px; /* Same width as sidebar */
+  padding-top: 50px; /* Adjusted to account for header height */
+}
+
+/* Styling for Login button */
+.w3-button-login {
+  background-color: black; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px; /* Rounded corners */
+}
+
+.w3-button-login:hover {
+  background-color: rgb(151, 149, 149); /* Darker green when hovering */
+  color: black;
+}
+button {
+  background: rgba(188, 183, 183, 0.1);
+  
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  
+
+}
+
+
+.email {
+  text-align: center;
+  margin: 20px; ;
+  padding: 10px;
+  border-radius: 5px;
+  width: 95%; /* Adjust width as needed */
+}
+
+.email input[type="email"] {
+  width: 30%; /* Set a fixed width for the input field */
+  padding: 10px; /* Add padding for better appearance */
+  padding-left: 50px;
+  border: 1px solid #ccc; /* Add a border for clarity */
+  border-radius: 30px; /* Round the corners slightly */
+  font-size: 16px; /* Adjust font size */
+  box-sizing: border-box;
+}
+
+
+::placeholder{
+  color: black;
+}
+ 
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  overflow: hidden;
+}
+
+.grid-container div {
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative; /* added for positioning the arrow */
+  transition: transform 0.3s; /* smooth tramsition effect */
+}
+.grid-container div:hover {
+  transform: scale(1.08); /* zoom in on hover */
+  cursor: pointer;
+  
+}
+.hd {
+  font-size: 35px;
+  margin: 5% 0 1% 1%;
+  
+  
+}
+
+.plan1 {
+  background-image: linear-gradient(to right, rgba(161, 42, 12, 0.331), rgba(240, 78, 9, 0.696));
+}
+  
+
+.plan2 {
+  background-image: linear-gradient(to right, rgb(175, 121, 136) , rgb(226, 17, 97));
+}
+.plan3 {
+  background-image: linear-gradient(to right, rgb(166, 91, 91) , rgb(213, 59, 12));
+}
+.plan4 {
+  background-image: linear-gradient(to right, #e8e09b, #b20a2c);
+}
+
+.plans {
+  font-size: 18px;
+}
+
+.head-plan {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arrow {
+  font-size: 30px;
+  padding: 2px 8px 2px 8px;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: 900;
+  color:white;
+  bottom: 10px; /* place the arrows at the bottom right in each container */
+  right: 10px;  /* place the arrows at the bottom right in each container */
+  position: absolute; /*positioned absolutely within each container */
+  text-decoration: none; /* Remove underline */
+
+}
+.arrow:hover {
+  background-color: #4f4b4b;
+}
+
+
+footer {
+  /*background-color: #333;*/
+  background: linear-gradient(to right, #2C3E50,#FD746C);
+  color: white;
+  padding: 40px 20px;
+  margin-top: 3%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons a {
+  margin-right: 10px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+

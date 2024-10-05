@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Hercontact.css">
+</head>
+<body>
+    <header class="w3-header w3-top w3-white w3-xlarge">
+        <span class="w3-left w3-padding">HERPOWER FITNESS</span>
+        <a href="login.html" class="w3-button-login w3-right">Login</a>
+        <span class="w3-button w3-right" onclick="w3_open()">☰</span>
+      </header>
+
+
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <br><br><br><br>
+
+      <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;" id="mySidebar">
+        <br><br><br><br><br>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+        <a href="HerPower.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME PAGE</a> 
+        <a href="membership.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMBERSHIPS</a> 
+        <a href="sche.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SCHEDULES</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="Hercontact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+        <div class="w3-dropdown-click">
+          <button class="w3-button w3-block w3-center w3-padding-16" onclick="toggleDropdown('classesDropdown')">CLASSES</button>
+          <div id="classesDropdown" class="w3-dropdown-content w3-bar-block w3-animate-zoom w3-black w3-card-4" style="display:none;">
+            <a href="Pilates.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">PILATES CLASS</a>
+            <a href="aero.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">AEROBICS CLASS</a>
+            <a href="self-def.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">SELF DEFENSE CLASS</a>
+            <a href="dancing.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">DANCE CLASS</a>
+            <a href="cycle.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">CYCLING CLASS</a>
+            <a href="yogi.html" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">YOGA CLASS</a>
+            
+          </div>
+        </div>
+      </nav>
+
+        <div class="image-section">
+            <div class="glass">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    
+
+    <section>
+        <h1 class="hd">Customer Support</h1>
+        <h1> South Africa:035 001 6030
+        <br> Outside South Africa:
+        021 180 3566  </h1>
+
+      <br><br>
+      <h1>Call centre hours<h1>
+       <p> Weekdays:
+        7:30am to 6pm (5pm on Fridays)<br>
+        Weekends & public holidays:
+        Closed</p>
+  <br>
+  <div class="Map">
+  <h2>WHERE TO FIND US</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.9431021177434!2d28.124882675262622!3d-26.00268117720126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e092e59ba19%3A0xb5de528a0d5b5d31!2s676%20Gallagher%20Ave%2C%20Halfway%20House%2C%20Midrand%2C%201685!5e0!3m2!1sen!2sza!4v1720359239503!5m2!1sen!2sza" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div>
+    <p class="address">676 Gallagher Avenue </p>
+    <p  class="address">Johannesburg, 1685</p>
+    <p  class="address">South Africa</p>
+    <p  class="address">Phone: 035 001 6030</p>
+    <p  class="address">Email: info@hotelsky.com</p>
+</div>
+</section>
+
+    <script>
+        // Function to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+      
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+      
+        // Function to toggle dropdown menu
+        function toggleDropdown(id) {
+          var dropdown = document.getElementById(id);
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+      </script>
+
+<footer class="footer">
+  <div class="container2">
+   <div class="row">
+     <div class="footer-col">
+       <h4>company</h4>
+       <ul>
+         <li><a href="about.html">about us</a></li>
+         <li><a href="membership.html">Membership</a></li>
+         <li><a href="sche.html">Schedule</a></li>
+         <li><a href="classes.html">Classes</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Contacts</h4>
+       <ul>
+        <h3>676 Gallagher Avenue,<br>
+          Midrand, Johannesburg<br>
+          South Africa, 1685<br>
+          Phone: 035 001 6030<br>
+          info@herpowerfitness.com</h3>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>follow us</h4>
+       <div class="social-icons">
+          <a href="https://www.instagram.com/skyhotel" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/skyhotel" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+          <a href="mailto:info@hotelsky.com"><img src="email.jpg" alt="Email"></a>
+     </div>
+   </div>
+  </div>
+</footer>
+
+</body>
+</html>
