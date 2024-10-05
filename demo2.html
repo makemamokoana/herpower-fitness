@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Gym Facilities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .facilities-section {
+            padding: 50px;
+            background: #fff;
+        }
+
+        .facilities-head {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .facilities-container {
+            display: grid;
+            /*grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;*/
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .facility-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .facility-box:hover {
+            transform: scale(1.05);
+        }
+
+        .facility-icon {
+            font-size: 50px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .facility-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .facility-description {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="facilities-section">
+        <h1 class="facilities-head">Our Facilities</h1>
+        <div class="facilities-container">
+            <div class="facility-box">
+                <i class="fas fa-dumbbell facility-icon"></i>
+                <h2 class="facility-title">Modern Equipment</h2>
+                <p class="facility-description">State-of-the-art equipment for all your fitness needs.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-spa facility-icon"></i>
+                <h2 class="facility-title">Wellness Spa</h2>
+                <p class="facility-description">Relax and rejuvenate in our luxury spa facilities.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-swimmer facility-icon"></i>
+                <h2 class="facility-title">Swimming Pool</h2>
+                <p class="facility-description">Indoor swimming pool with lanes for serious swimmers.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-running facility-icon"></i>
+                <h2 class="facility-title">Cardio Zone</h2>
+                <p class="facility-description">Dedicated cardio zone with treadmills, bikes, and more.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-dumbbell facility-icon"></i>
+                <h2 class="facility-title">Weightlifting Area</h2>
+                <p class="facility-description">Fully equipped weightlifting area for all levels.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-heart facility-icon"></i>
+                <h2 class="facility-title">Yoga Studio</h2>
+                <p class="facility-description">Peaceful yoga studio with classes for all levels.</p>
+            </div>
+            <div class="facility-box">
+                <i class="fas fa-child facility-icon"></i>
+                <h2 class="facility-title">Kids Area</h2>
+                <p class="facility-description">Safe and fun area for children to play while you work out.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
