@@ -1,0 +1,417 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-section {
+  background-image: url(treadmill.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+}
+.defence-bg {
+background: rgba(72, 62, 62, 0.6); /* Light background with some opacity */
+border-radius: 10px;
+padding: 20px;
+font-size: 38px;
+line-height: 10%;
+font-weight: 600;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.images-section {
+  background-color: whitesmoke; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  gap: 20px;
+}
+
+.trainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.trainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+}
+
+.trainer .name {
+color: black;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pilates-img {
+  width: 65%;
+  border-radius: 10px;
+}
+
+.description-section {
+  color: rgb(73, 73, 73);
+  margin-bottom: 1%;  
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background: linear-gradient(to right, #9796f0,#fbc7d4); 
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+.w3-container {text-align: center;}
+
+.w3-sidebar {
+height: 100%;
+width: 250px;
+background-color: #333;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 3;
+overflow-x: hidden;
+transition: 0.3s;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.w3-sidebar a {
+padding: 16px;
+text-decoration: none;
+font-size: 18px;
+display: block;
+transition: 0.3s;
+color: white;
+}
+
+.w3-header .w3-left {
+float: left;
+padding: 16px;
+font-size: 24px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana,; /* Example of specifying a stylish font */
+font-weight: normal; /* Adjust font weight as needed */
+text-transform: uppercase; /* Convert text to uppercase */
+letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+color: white; /* Adjust text color */
+}
+
+.w3-sidebar a:hover {
+background-color: #555;
+}
+
+.w3-dropdown-click .w3-button {
+width: 100%;
+text-align: left;
+}
+
+.w3-dropdown-content {
+display: none;
+position: relative;
+}
+
+.w3-dropdown-content a {
+padding: 16px;
+text-decoration: none;
+display: block;
+transition: 0.3s;
+color: white;
+}
+
+.w3-dropdown-content a:hover {
+background-color: #555;
+}
+
+.w3-overlay {
+position: fixed;
+display: none;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5);
+z-index: 2;
+cursor: pointer;
+}
+
+.w3-header {
+position: fixed;
+top: 0;
+right: 0;
+width: calc(100% - 3px); /* Adjust width to accommodate sidebar */
+background: linear-gradient(to right, #B79891,#94716B);
+/*background-color: #525151;*/
+padding: 16px;
+
+text-align: right; /* Aligns content to the right */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+z-index: 4; /* Ensures header is above sidebar */
+}
+
+.w3-header .w3-button {
+font-size: 24px;
+padding: 0 16px;
+cursor: pointer;
+}
+
+.w3-header .w3-left {
+float: left;
+padding: 16px;
+margin-left: 20px;
+font-size: 24px;
+}
+
+.w3-main {
+margin-right: 250px; /* Same width as sidebar */
+padding-top: 50px; /* Adjusted to account for header height */
+}
+
+/* Styling for Login button */
+.w3-button-login {
+background-color: black; /* Green background */
+border: none;
+color: white;
+padding: 10px 20px; /* Padding inside the button */
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 100px; /* Rounded corners */
+}
+
+
+
+.w3-button-login:hover {
+background-color: gray; /* Darker green when hovering */
+}
+
+
+footer {
+  /*background-color: #333;*/
+  background: linear-gradient(to right, #2C3E50,#FD746C);
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons a {
+  margin-right: 10px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+
+
+.page {
+  background-color: grey;
+  width: 100%;
+  height: 100vh;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*#page1 .background-image {
+  width: 100%;
+  height: 100%;
+  background: url(pilate-bg.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#page1 h1 {
+  font-size: 4em;
+}*/
+
+#page2 .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#page2 .gym-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page2 .description {
+  width: 50%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2 .description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+#page3 .slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3 .slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#page3 .slide img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page3 .prev, #page3 .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#page3 .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#page3 .prev:hover, #page3 .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#page4 .round-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+}
+
+#page4 .round-image-container {
+  text-align: center;
+}
+
+#page4 .round-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#page4 p {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+
+button {
+  background: rgba(188, 183, 183, 0.1);
+  
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  
+
+}
+
+
+
+

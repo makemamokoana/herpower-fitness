@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Gym Classes</title>
+<link rel="stylesheet" href="class.css">
+</head>
+
+<body class="mainbody">
+    
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;" id="mySidebar">
+        <br><br><br><br><br>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME PAGE</a> 
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMBERSHIPS</a> 
+        <a href="#Schedules" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SCHEDULES</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+        <div class="w3-dropdown-click">
+          <button class="w3-button w3-block w3-center w3-padding-16" onclick="toggleDropdown('classesDropdown')">CLASSES <i class="fa fa-caret-down"></i></button>
+          <div id="classesDropdown" class="w3-dropdown-content w3-bar-block w3-animate-zoom w3-black w3-card-4" style="display:none;">
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">PILATES CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">AEROBICS CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">SELF DEFENSE CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">DANCE CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">CYCLING CLASS</a>
+          </div>
+        </div>
+      </nav>
+     <!-- Main content -->
+    <div class="w3-main">
+    
+      <!-- Top header -->
+      <header class="w3-header w3-top w3-white w3-xlarge">
+        <span class="w3-left w3-padding">HERPOWER FITNESS</span>
+        <a href="login.html" class="w3-button-login w3-right">Login</a>
+        <span class="w3-button w3-right" onclick="w3_open()">☰</span>
+      </header>
+    
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <br><br><br><br>
+
+
+<div class="classes-bg">
+<h1> Explore Our Gym Classes</h1>
+</div>
+
+<!--Classes Sum boxes-->
+<section class="activities">
+<div class="yoga">
+    <h4>Yoga Class</h4>
+    <p>Yoga gracefully intertwines breath, movement, and mindfulness into
+         a harmonious practice that nurtures both body and soul.</p>
+    <button id="yogabutton">YOGA</button>
+</div>  
+
+<div class="pilates">
+    <h4>Pilates Class</h4>
+    <p>Pilates emphasizes core strength, flexibility, and body alignment through precise movements,
+         offering a balanced approach to physical fitness and overall well-being.</p>
+    <button id="pilatesbutton">PILATES</button>
+</div>
+
+<div class="defense">
+    <h4>Self Defense Class</h4>
+    <p>Self-defense equips individuals with the skills and confidence to protect themselves in
+        challenging situations, promoting safety and empowerment in everyday life.</p>
+    <button id="defensebutton">DEFENSE</button>
+</div>
+
+<div class="dance">
+    <h4>Dance Class</h4>
+    <p>Dance is a powerful expression of emotion and creativity, blending rhythmic movement with
+         storytelling to captivate and inspire both performers and audiences alike.</p>
+    <button id="dancebutton">DANCE</button>
+</div>
+
+<div class="aerobics">
+    <h4>Aerobics Class</h4>
+    <p>Aerobics energizes the body and mind through dynamic movements, fostering cardiovascular 
+        health and a sense of vitality with each rhythmic beat.</p>
+    <button id="aerobicsbutton">AEROBICS</button>
+</div>
+
+<div class="cycling">
+    <h4>Cycling Class</h4>
+    <p>Indoor cycling immerses you in a high-energy workout, blending music and motivation 
+        as you pedal through challenges and push towards fitness goals in a dynamic, 
+        supportive environment..</p>
+    
+    <button id="cyclingbutton">CYCLING</button>
+</div>
+</section>
+
+<!--Going to schedule page-->
+<div class="button">
+    <p class="press"> <strong> Click To See Gym Training Schedule</strong>
+    </p>
+    <button class="mine"><a href="schedule.html"> See Schedule</a></button>
+</div>
+
+<script>
+    // Function to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+  
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  
+    // Function to toggle dropdown menu
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+  </script>
+
+
+<footer class="footer">
+    <div class="container2">
+     <div class="row">
+       <div class="footer-col">
+         <h4>company</h4>
+         <ul>
+           <li><a href="#">about us</a></li>
+           <li><a href="#">Membership</a></li>
+           <li><a href="#">Schedule</a></li>
+           <li><a href="#">Classes</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Contacts</h4>
+         <ul>
+          <p>676 Gallagher Avenue,<br>
+            Midrand, Johannesburg<br>
+            South Africa, 1685<br>
+            Phone: 035 001 6030<br>
+            info@herpowerfitness.com</p>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-icons">
+            <a href="https://www.instagram.com/skyhotel" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/skyhotel" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+            <a href="mailto:info@hotelsky.com"><img src="email.jpg" alt="Email"></a>
+       </div>
+     </div>
+    </div>
+  </footer>
+
+<a href="#top" id="scrollTopBtn" title="Go to top">↑</a>
+
+
+<!--Button script codes-->
+<script>
+    document.getElementById("yogabutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "yoga.html";
+    };
+</script>
+
+<script>
+    document.getElementById("pilatesbutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "pilates.html";
+    };
+</script>
+
+<script>
+    document.getElementById("defensebutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "defense.html";
+    };
+</script>
+
+<script>
+    document.getElementById("dancebutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "dance.html";
+    }; </script>
+    
+<script>
+    document.getElementById("aerobicsbutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "aerobics.html";
+    };
+</script>
+
+
+<script>
+    document.getElementById("cyclingbutton").onclick = function() {
+        // Redirect to another page
+        window.location.href = "cycling.html";
+    };
+</script>
+
+
+
+</body>
+</html>

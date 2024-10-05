@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerPower Fitness - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page1 .background-image {
+    width: 100%;
+    height: 100%;
+    background: url(pilate-bg.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#page1 h1 {
+    font-size: 4em;
+}
+
+#page2 .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#page2 .gym-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page2 .description {
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+#page3 .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#page3 .slide img {
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#page3 .prev, #page3 .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#page3 .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#page3 .prev:hover, #page3 .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#page4 .round-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+}
+
+#page4 .round-image-container {
+    text-align: center;
+}
+
+#page4 .round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#page4 p {
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+
+
+footer {
+  /*background-color: #333;*/
+  background: linear-gradient(to right, #2C3E50,#FD746C);
+  color: white;
+  padding: 40px 20px;
+  margin-top: 3%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons a {
+  margin-right: 10px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- First Page -->
+    <section class="page" id="page1">
+        <div class="background-image">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <!-- Second Page -->
+    <section class="page" id="page2">
+        <div class="content">
+            <img src="pilate-image.jpg" alt="Gym Image" class="gym-image">
+            <div class="description">
+                <p>HerPower Fitness is dedicated to empowering women by providing a safe and supportive environment for all fitness levels. Our state-of-the-art facility and experienced instructors are here to help you achieve your health and fitness goals...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page -->
+    <section class="page" id="page3">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="cycle-image.jpg" alt="Gym Image 1">
+            </div>
+            <div class="slide">
+                <img src="dance-girls.jpg" alt="Gym Image 2">
+            </div>
+            <div class="slide">
+                <img src="yoga1.jpg" alt="Gym Image 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- Fourth Page -->
+    <section class="page" id="page4">
+        <div class="round-images">
+            <div class="round-image-container">
+                <img src="xiaon.jpg" alt="Image 1" class="round-image">
+                <p>Text 1</p>
+            </div>
+            <div class="round-image-container">
+                <img src="nolo.jpg" alt="Image 2" class="round-image">
+                <p>Text 2</p>
+            </div>
+            <div class="round-image-container">
+                <img src="pilate-trainer.jpg" alt="Image 3" class="round-image">
+                <p>Text 3</p>
+            </div>
+            <div class="round-image-container">
+                <img src="yoga-trainer.jpg" alt="Image 4" class="round-image">
+                <p>Text 4</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacts</h3>
+                <ul>
+                    <li>676 Gallagher Avenue,</li>
+                    <li>Midrand, Johannesburg</li>
+                    <li>South Africa, 1685</li>
+                    <li>Phone: 035 001 6030</li>
+                    <li><a href="mailto:info@herpowerfitness.com">info@herpowerfitness.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-icons">
+                    <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="email.jpg" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.querySelectorAll(".slide");
+    slides.forEach(slide => slide.style.display = "none");
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+    </script>
+</body>
+</html>

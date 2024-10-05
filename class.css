@@ -1,0 +1,562 @@
+/* style my classes */
+
+.mainbody {   
+    height: 100%;
+    margin: 0;
+}
+
+
+    
+.classes-bg {
+    background-image: url('class1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{ font-size: 120px; 
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border-radius: 8px ; 
+position: sticky;
+margin-bottom: 500px;
+text-shadow: 
+-1px -1px 0 #ffffff91,  
+ 1px -1px 0 #ffffff91,
+-1px  1px 0 #ffffff91,
+ 1px  1px 0 #ffffff91;
+}
+
+/* Schedule Table*/
+
+.schedule{td:hover {background-color: #D6EEEE;}}
+.schedule{tr{border-bottom: 1px solid #000000;}}
+.schedule{h1{font-size: 2000px; text-align: center;}}
+.schedule{border: 1px solid black;border-collapse: collapse;
+        background-color: rgba(216, 112, 147, 0.605);
+        width: 100%; text-align: center; 
+        height: 100%; font-size: 28px;}
+
+.tablename{font-size: 120px; color: rgb(251, 149, 166);
+            border:none;
+            padding: 5px; background-color: #00000066;}
+.tablename{background-image: url(schedule.jpg);
+            background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;}
+
+.word{margin-top: 200px;}
+
+p{color: white;}
+.container2{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.social-icons a {margin: 0 15px;}
+.social-icons{margin-bottom: 15px;}
+.social-icons img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;}
+.social-icons img:hover {
+  transform: scale(1.1);}
+
+
+
+
+.press{font-size: 25px; color: rgb(13, 7, 126);
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+    text-align: center;}
+.button{margin-top: 10px;}
+.button{margin-bottom: 50px;}
+
+
+.mine:hover{ background-color:pink;}
+.mine{background-color: rgb(255, 61, 94); padding: 12px 24px;
+     text-decoration: none;
+    display: inline-block; font-size: 16px;
+    margin: 4px 2px; cursor: pointer;
+    border-radius: 8px; margin-left: 45%; }
+
+
+/*classes page*/
+.yoga{   
+    border: 2px solid #ccc; text-align:  top left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+    font-size: 18px;  padding: 20px;
+    width: 200px; margin: 20px auto; height: 250px;
+    background-color: rgba(127, 255, 212, 0.37);
+    background-size: cover;
+    background-position: center;
+    color: #000000; 
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+.pilates{   
+    border: 2px solid #ccc; 
+    text-align: left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+     font-size: 20px;  
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px ; 
+    /*background-image: url("pilates.jpg");*/
+    background-color: rgba(255, 190, 140, 0.522);
+    background-size: cover;
+    background-position: center; 
+    color: #000000;
+    border-radius: 10px;
+}
+.defense{   
+    border: 2px solid #ccc; /* Box border */
+    text-align: left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+     font-size: 20px;  
+    padding: 20px;
+    width: 200px;
+    margin: 20px auto;
+    /*background-image: url("defense.jpg");*/
+    background-color: rgba(252, 94, 252, 0.496);
+    background-size: cover;
+    background-position: center; 
+    color: #000000; 
+    border-radius: 10px;
+}
+.dance{   
+    border: 2px solid #ccc; 
+    text-align: left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+    font-size: 20px;
+    padding: 20px; 
+    width: 200px;
+    margin: 20px auto; 
+    /*background-image: url("dance.jpg"); */
+    background-color: rgba(255, 0, 0, 0.382);
+    background-size: cover; 
+    background-position: center;
+    color: #000000; 
+    border-radius: 10px;
+}
+.aerobics{   
+    border: 2px solid hsl(0, 0%, 80%); 
+    text-align: left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+    font-size: 20px;
+    padding: 20px; 
+    width: 200px; 
+    margin: 20px auto; 
+    background-color: rgba(255, 255, 0, 0.386);
+    background-size: cover; 
+    background-position: center; 
+    color: #000000;
+    border-radius: 10px;}
+
+
+.cycling{   
+    border: 2px solid #ccc;
+    text-align: left;
+    text-shadow: 
+    -1px -1px 0 #ffffff91,  
+     1px -1px 0 #ffffff91,
+    -1px  1px 0 #ffffff91,
+     1px  1px 0 #ffffff91;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px auto; 
+   /* background-image: url("cycling.jpg");*/
+   background-color: rgba(0, 0, 255, 0.327);
+    background-size: cover; 
+    background-position: center;
+    color: #000000; 
+    border-radius: 10px;}
+
+.activities{display: flex; flex-wrap: wrap; justify-content: space-around;
+    max-width: 800px; margin: 20px auto;}
+
+/*Classes block hoover*/
+.yoga {display: block;
+    height: auto;
+    transition: transform 0.3s ease-out;}
+.yoga:hover {transform: scale(1.1);}
+
+.pilates {display: block;
+    height: auto;
+    transition: transform 0.3s ease-out;}
+.pilates:hover {transform: scale(1.1);}
+
+.defense {display: block;
+    height: auto;
+    transition: transform 0.3s ease-out;}
+.defense:hover {transform: scale(1.1);}
+
+.dance {display: block;
+    height: auto;
+    transition: transform 0.3s ease-out;}
+.dance:hover {transform: scale(1.1);}
+
+.aerobics {display: block;
+    height: auto;
+    transition: transform 0.3s ease-out;}
+.aerobics:hover {transform: scale(1.1);}
+
+.cycling {display: block;height: auto;
+    transition: transform 0.3s ease-out;}
+.cycling:hover {transform: scale(1.1);}
+
+
+/*Yoga separate page*/
+.yogbody{ background-color: rgb(255, 255, 255);}
+.yoga0{
+    float: left;
+    width: 22%;
+    height: 500px;
+    background: #ffdff6;border-radius: 10px;
+    padding: 20px;}
+.tr1{text-align: center; font-size: 40px; margin-top: 0px;margin-top: 0px;}
+ 
+
+
+
+/* Individual class structure*/
+section::after {content: "";
+    display: table;
+    clear: both;}
+
+
+.yoga1{background-image: url(yoga1.jpg); background-size:
+     cover; background-position: center;float: right; border-radius: 10px;
+     padding: 20px;
+     width: 70%;
+     height: 500px;}
+.defense11{background-image: url(defense.jpg); background-size:
+        cover; background-position: center;float: right; border-radius: 10px;
+        padding: 20px;
+        width: 70%;
+        height: 500px; }
+
+.dance11{background-image: url(dance.jpg); background-size:
+        cover; background-position: center;float: right; border-radius: 10px;
+            padding: 20px;width: 70%;height: 500px; }
+
+.pilates11{background-image: url(pilates.jpg); background-size:
+                cover; background-position: center;float: right; border-radius: 10px;
+                padding: 20px;width: 70%;height: 500px; }
+
+.aerobics11{background-image: url(aerobics.jpg); background-size:
+            cover; background-position: center;float: right; border-radius: 10px;
+            padding: 20px;width: 70%;height: 500px; }
+
+.cycling11{background-image: url(cycling.jpg); background-size:
+        cover; background-position: center;float: right; border-radius: 10px;padding: 20px;
+        width: 70%;height: 500px; }
+
+
+
+
+
+.tita{font-size: 60px; text-align: center; margin: 2%;}
+.yogafooter{margin-top: 20px;}
+
+.yogafooter{ background-color: rgba(233, 205, 214, 0.971); width:100%;
+    border: radius 100px; 
+    margin-bottom: 20px;
+    margin-top: 20px;margin-top: 150px;}
+
+
+/* image instructor pages*/
+.round-border {
+        width: 300px;
+        height: 300px; 
+        border-radius: 50%;
+        overflow: hidden; /* Clips the image to fit within the rounded border */
+        border: 2px solid #ccc;}
+.round-border img {width: 100%; height: 100%;object-fit: cover; }
+
+
+
+
+.tre1{font-size: 18px; text-align: center;}
+.fon1{ font-size: 35px; text-align: center;
+     color: #291b25;
+     text-shadow: 
+     -1px -1px 0 #fcfcfc,  
+      1px -1px 0 #ffffff,
+     -1px  1px 0 #ffffff,
+      1px  1px 0 #ffffff;}
+
+
+
+
+#scrollTopBtn {position: fixed; bottom: 20px;right: 30px; 
+    z-index: 99;background-color: #9dff82; color: rgb(0, 0, 0); 
+    text-align: center; padding: 15px;border-radius: 10px; 
+    text-decoration: none; font-size: 18px; 
+}
+
+#scrollTopBtn:hover {
+    background-color: #333; 
+}
+/* Side menu bar*/
+.w3-sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: #555;
+  color:white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font: bold;
+}
+
+.w3-sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,; /* Example of specifying a stylish font */
+  font-weight: normal; /* Adjust font weight as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+  color: #333; /* Adjust text color */
+}
+
+.w3-sidebar a:hover {
+  background-color: #555;
+}
+
+.w3-dropdown-click .w3-button {
+  width: 100%;
+  text-align: left;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: relative;
+}
+
+.w3-dropdown-content a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+.w3-dropdown-content a:hover {
+  background-color: #555;
+}
+
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.w3-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 3px); /* Adjust width to accommodate sidebar */
+  background-color: #fff;
+  padding: 16px;
+  text-align: right; /* Aligns content to the right */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 4; /* Ensures header is above sidebar */
+}
+
+.w3-header .w3-button {
+  font-size: 24px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.w3-header .w3-left {
+  float: left;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.w3-main {
+  margin-right: 250px; /* Same width as sidebar */
+  padding-top: 50px; /* Adjusted to account for header height */
+}
+
+/* Styling for Login button */
+.w3-button-login {
+  background-color: black; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px; /* Rounded corners */
+}
+
+.w3-button-login:hover {
+  background-color: lightgray; /* Darker green when hovering */
+}
+button {
+  background: rgba(188, 183, 183, 0.1);
+  
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  
+
+}

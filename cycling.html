@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="class.css">
+    <title>cycling</title>
+    </head>
+
+    
+    <body class="yogbody">
+        
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;" id="mySidebar">
+        <br><br><br><br><br>
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME PAGE</a> 
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMBERSHIPS</a> 
+        <a href="#Schedules" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SCHEDULES</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+        <div class="w3-dropdown-click">
+          <button class="w3-button w3-block w3-center w3-padding-16" onclick="toggleDropdown('classesDropdown')">CLASSES <i class="fa fa-caret-down"></i></button>
+          <div id="classesDropdown" class="w3-dropdown-content w3-bar-block w3-animate-zoom w3-black w3-card-4" style="display:none;">
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">PILATES CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">AEROBICS CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">SELF DEFENSE CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">DANCE CLASS</a>
+            <a href="#" class="w3-bar-item w3-button w3-center w3-padding-16" onclick="w3_close()">CYCLING CLASS</a>
+          </div>
+        </div>
+      </nav>
+     <!-- Main content -->
+    <div class="w3-main">
+    
+      <!-- Top header -->
+      <header class="w3-header w3-top w3-white w3-xlarge">
+        <span class="w3-left w3-padding">HERPOWER FITNESS</span>
+        <a href="login.html" class="w3-button-login w3-right">Login</a>
+        <span class="w3-button w3-right" onclick="w3_open()">☰</span>
+      </header>
+    
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <br><br><br><br>
+    <h3 class="tita">HERPOWER FITNESS : CYCLING</h3>
+    
+    <section>
+    <div class="yoga0"> 
+        <p class="tr1">Your Trainer</p>
+        
+        <div class="round-border">
+        <img src="xiaon.jpg" alt="xison Instructor">
+        </div>
+        <p class="tre1"> Xiaon Yen is our cycling instructor who is also a professional cyclist.
+            She is passionate about fitness and has made herserlf careers out of it. </p>
+    </div>
+
+    <div class="cycling11">
+    <p class="fon1">
+        Pedal your way to fitness and fun with cycling classes at Herpower. Whether you're a cycling
+         enthusiast or new to indoor cycling, our state-of-the-art studio offers a dynamic environment 
+        to achieve your fitness goals. Ride to the rhythm of motivating music and experience an
+        exhilarating workout that strengthens your legs, boosts cardiovascular endurance, and torches calories.
+        Led by experienced instructors who are passionate about cycling, our classes cater to 
+        all levels, providing personalized guidance to help you maximize your performance and enjoy 
+        the ride. Join our cycling community at Herpower and discover the thrill of pedal power –
+        because every revolution brings you closer to a healthier, happier you.
+        Let's ride towards fitness together!
+        </p>
+    </div>
+
+    <script>
+        // Function to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+      
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+      
+        // Function to toggle dropdown menu
+        function toggleDropdown(id) {
+          var dropdown = document.getElementById(id);
+          if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+      </script>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container2">
+         <div class="row">
+           <div class="footer-col">
+             <h4>company</h4>
+             <ul>
+               <li><a href="#">about us</a></li>
+               <li><a href="#">Membership</a></li>
+               <li><a href="#">Schedule</a></li>
+               <li><a href="#">Classes</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Contacts</h4>
+             <ul>
+              <p>676 Gallagher Avenue,<br>
+                Midrand, Johannesburg<br>
+                South Africa, 1685<br>
+                Phone: 035 001 6030<br>
+                info@herpowerfitness.com</p>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-icons">
+                <a href="https://www.instagram.com/skyhotel" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/skyhotel" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="mailto:info@hotelsky.com"><img src="email.jpg" alt="Email"></a>
+           </div>
+         </div>
+        </div>
+      </footer>
+
+    </body>
+
+
+</html>
